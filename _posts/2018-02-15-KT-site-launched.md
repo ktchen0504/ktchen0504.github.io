@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "KT, Site Launched!"
+title: "Finally, Site Launched!"
 date: 2018-02-15
 ---
 
