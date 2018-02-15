@@ -1,2 +1,3 @@
-	name: Kuan-Ting Chen
-	markdown: kramdown
+name: Kuan-Ting Chen
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
