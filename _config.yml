@@ -1,3 +1,9 @@
+# Basic
+title: KTChen
+author: Kuan-Ting CHen 
+description: Site
+github_username: ktchen0504
+
 name: Kuan-Ting Chen
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
