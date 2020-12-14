@@ -41,3 +41,27 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+/*--   blog post content page  --*/
+
+.post-preview {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.post-preview:last-child {
+  border-bottom: 0;
+}
+
+.post-preview .post-subtitle {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.post-preview .post-meta {
+  color: #808080;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 0 10px;
+}
