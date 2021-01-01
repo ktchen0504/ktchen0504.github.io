@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Project 2"
+title: "Sonification Feedback Design"
 date: 2020-08-20
 ---
 
