@@ -39,9 +39,10 @@ Conducted systematic review regarding detection time of drug usage with oral flu
 *Surface Transportation*
 - Using naturalistic driving data to examine the influences of driving syltes on crash severity level.  
 The study aimed at identifying driver drivng styles based on vehicle kinematics without prior assumption of what drivng style is and to study the association between driving sytle and creash serverity level.  
-[`[publication]`](https://journals.sagepub.com/doi/abs/10.1177/0361198119845360)
-  
+[`[Publication]`](https://journals.sagepub.com/doi/abs/10.1177/0361198119845360)  
+
 *Railway*
 - Development of timetable stability and effieicney evaluation model.  
-This research proposed an analytic framework to evaluate timetable stability based on our proposed index "recovery time". A monte carlo simulation method was proposed to further consider railway operation uncertainty.   
-[`[publication 1]`](https://ascelibrary.org/doi/10.1061/JTEPBS.0000038) [`[publication 2]`](https://journals.sagepub.com/doi/abs/10.1177/0361198118790325)
+This research proposed an analytic framework to evaluate timetable stability based on our proposed index “recovery time”. A monte carlo simulation method was proposed to further consider railway operation uncertainty.  
+[`[Publication 1]`](https://ascelibrary.org/doi/10.1061/JTEPBS.0000038)  
+[`[Publication 2]`](https://journals.sagepub.com/doi/abs/10.1177/0361198118790325)  
