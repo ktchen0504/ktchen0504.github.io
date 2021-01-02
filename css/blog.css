@@ -45,12 +45,22 @@
   line-height: 1.4em;
   color: #333;
 }
-.post ul {
+.posts ul {
   font-size: 1.25em;
   line-height: 1.4em;
   color: #333;
 }
-.posts footer {
+.posts>.post>p {
+  font-size: 1em;
+}
+.posts>.post>ul {
+  font-size: 1em;
+}
+/*.posts footer {
   border-top: 1px solid #d5d5d5;
   font-size: .8em;
+}*/
+.blog-footer {
+  border-top: 1px solid #d5d5d5;
+  font-size: .8em;  
 }
