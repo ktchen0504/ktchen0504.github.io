@@ -51,10 +51,10 @@
   color: #333;
 }
 .posts>.post>p {
-  font-size: 1em;
+  font-size: 1.25em;
 }
 .posts>.post>ul {
-  font-size: 1em;
+  font-size: 1.25em;
 }
 /*.posts footer {
   border-top: 1px solid #d5d5d5;
@@ -63,4 +63,6 @@
 .blog-footer {
   border-top: 1px solid #d5d5d5;
   font-size: .8em;  
+  max-width: 1100px;
+  list-style-type: none;
 }
