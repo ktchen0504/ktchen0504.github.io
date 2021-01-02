@@ -8,7 +8,7 @@ date: 2020-12-31
   
 ---
   
-## Reserach Projects  
+<br/>
 
 #### Current Projects  
 - Next generation of shared autonomous vehicles (SAVs).  
