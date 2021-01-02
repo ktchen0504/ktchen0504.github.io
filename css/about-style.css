@@ -376,7 +376,7 @@ responsive
 	  	background:#f7f7f7;	
 	}
 	.wrap-ri {
-		height: 90vh;
+		min-height: 65vh;
 	}
 	.wrap-row>.grid-n, .wrap-row>.grid-2n {
 		margin-left: -5px;		
