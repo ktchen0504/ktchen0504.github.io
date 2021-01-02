@@ -36,30 +36,27 @@
 }
 
 .posts h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   font-weight: 550;
   font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 .posts p {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   line-height: 1.4em;
   color: #333;
 }
 .posts ul {
-  /*font-size: 1.25em;*/
+
   line-height: 1.4em;
   color: #333;
 }
 .posts>.post>p {
-  /*font-size: 1.25em;*/
-}
-.posts>.post>ul {
   font-size: 1.25em;
 }
-/*.posts footer {
-  border-top: 1px solid #d5d5d5;
-  font-size: .8em;
-}*/
+.posts>.post>ul {
+  font-size: 1.25rem;
+}
+
 .blog-footer {
   border-top: 1px solid #d5d5d5;
   font-size: 1.25em;  

@@ -10,7 +10,7 @@ date: 2020-12-31
   
 ## Reserach Projects  
 
-### Current Projects  
+#### Current Projects  
 - Next generation of shared autonomous vehicles (SAVs).  
 To Understand detailed needs of people with disabilities and older adults using shared autonomous vehicles, and to develop user-tested reference designs.  
 
@@ -22,7 +22,7 @@ Design blended sonification based countinuous feedback system to support driver 
 [`[publication]`](https://www.sciencedirect.com/science/article/abs/pii/S1071581920301208)
 
 
-### Previous Projects  
+#### Previous Projects  
   
 *Intern Projects*
 - Review of speed limit design and setting practice.  
