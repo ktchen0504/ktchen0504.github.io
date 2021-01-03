@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "Driving Style Clustering"
+subtitle: "First phase of driving style study"
 date: 2019-01-11
 ---
 
 ### Driving Style Clustering Using SHRP 2 Dataset 
 
 ---
-<img src="/public/images/Cluster_process.png"  style="margin: 0px -5px 0px 10px; width: 50%; height: 50%;" />
+<img src="/public/images/Cluster_process.png"  style="margin: 0px 0px 0px 10px; width: 50%; height: 50%;" />
 
 ***Keywords:*** *driving styles, cluster analysis, naturalistic driving*
 
