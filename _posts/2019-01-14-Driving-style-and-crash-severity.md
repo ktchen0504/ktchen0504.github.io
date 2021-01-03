@@ -7,7 +7,7 @@ date: 2019-01-14
 ### Driving Style Association with Crash Severity Using SHRP 2 Dataset 
 
 ---
-<img src="/public/images/Driving-style.jpg"  style="margin: 0px -5px 0px 10px; width: 35%; height: 35%;" />
+<img src="/public/images/Driving-style.png"  style="margin: 0px -5px 0px 10px; width: 35%; height: 35%;" />
 
 ***Keywords:*** *driving behaviors, driving styles, crash severity, naturalistic driving*
 
