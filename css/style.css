@@ -20,6 +20,7 @@ body {
 	border-top:10px solid #323444;
 	border-right:2px solid #747474;
 	border-bottom:10px solid #323444;
+	font-family: 'Noto Sans',sans-serif;
 }
 .navigate-bar > div {
 	width:143px; 	
@@ -172,6 +173,7 @@ section {
 	font-weight:600;
 	line-height:1.2;
 	margin:0 0 20px;
+	font-family: 'Noto Sans',sans-serif;
 }
 .col2 h2::after {
 	content:"";
@@ -184,10 +186,11 @@ section {
 }
 
 p.inner{
-	font-size: 1.5em;
-	font-family: serif;
+	font-size: 1.4em;
+	font-family: 'Noto Sans',sans-serif;
 	margin: 20px 0 20px 0;
 	padding-bottom: 0;
+	font-weight: 300;
 }
 
 .inner{
@@ -223,16 +226,16 @@ p.inner{
 .inner2::after {
 	content:"";
     background-color: #6B959A;
-    width: 35px;
+    width: 28px;
     display: block;
     height: 6px;
     margin-top: -8px;
     margin-left: 40px;
 }
 .inner2 {
-	font-size: 1.5em;
-	font-family:serif;
-	font-weight: bolder;
+	font-size: 1.4em;
+	font-family: 'Noto Sans',sans-serif;
+	font-weight: 300;
 }
 .inner2 a{
 	color: #474747;

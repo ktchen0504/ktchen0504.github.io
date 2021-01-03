@@ -29,7 +29,7 @@ section of about with timeline
 
 .wrap-row > div {
 	/*border: 2px solid orange;*/
-  	font-family: 'Alata',sans-serif;
+  	font-family: 'Noto Sans',sans-serif;
 }
 
 .wrap-row>.grid-n, .wrap-row>.grid-2n {
@@ -376,8 +376,7 @@ responsive
 	  	background:#f7f7f7;	
 	}
 	.wrap-ri {
-		min-height: 70vh;
-		grid-gap: 0.8rem;
+		height: 80vh;
 	}
 	.wrap-row>.grid-n, .wrap-row>.grid-2n {
 		margin-left: -5px;		
