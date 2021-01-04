@@ -87,14 +87,6 @@ for(X in 2015:2016){
 
 ```r
 head(as_data_frame(per_2015))
-```
-
-
-    ## Warning: `as_data_frame()` is deprecated as of tibble 2.0.0.
-    ## Please use `as_tibble()` instead.
-    ## The signature and semantics have changed, see `?as_tibble`.
-    ## This warning is displayed once every 8 hours.
-    ## Call `lifecycle::last_warnings()` to see where this warning was generated.
 
     ## # A tibble: 6 x 68
     ##   STATE ST_CASE VE_FORMS VEH_NO PER_NO STR_VEH COUNTY   DAY MONTH  HOUR MINUTE
@@ -118,7 +110,7 @@ head(as_data_frame(per_2015))
     ## #   DEATH_MO <int>, DEATH_YR <int>, DEATH_HR <int>, DEATH_MN <int>,
     ## #   DEATH_TM <int>, LAG_HRS <int>, LAG_MINS <int>, P_SF1 <int>, P_SF2 <int>,
     ## #   P_SF3 <int>, WORK_INJ <int>, HISPANIC <int>, RACE <int>, LOCATION <int>
-
+```
 
 ##### Pipe operator (%\>%) from magrittr
 
@@ -128,8 +120,6 @@ head(as_data_frame(per_2015))
 per_2015 <-filter(per_2015, INJ_SEV == 4)
 p_2015 <- select(per_2015, ST_CASE, PER_TYP, AGE, SEX)
 head(p_2015)
-```
-
 
     ##   ST_CASE PER_TYP AGE SEX
     ## 1   10001       1  68   1
@@ -138,15 +128,13 @@ head(p_2015)
     ## 4   10004       1  40   1
     ## 5   10005       1  24   1
     ## 6   10006       1  64   1
-
+```
 
 ```r
 ## Using pipe operator
 p_2016 <- per_2016 %>% filter(INJ_SEV==4) %>%
   select(ST_CASE, PER_TYP, AGE, SEX)
 head(p_2016)
-```
-
 
     ##   ST_CASE PER_TYP AGE SEX
     ## 1   10001       1  37   2
@@ -155,7 +143,7 @@ head(p_2016)
     ## 4   10004       1  36   1
     ## 5   10005       1  59   1
     ## 6   10006       1  58   1
-
+```
 
 ```r
 acc_veh_2015 <- merge(acc_2015, veh_2015, by = intersect(names(acc_2015), names(veh_2015)), all=TRUE)
@@ -166,8 +154,6 @@ acc_veh_2015_clean <- filter(acc_veh_2015, HIT_RUN !=0)
 acc_veh_2015_clean <- distinct(acc_veh_2015_clean, ST_CASE, .keep_all = TRUE)
 t_2015 <- select(acc_veh_2015_clean, ST_CASE, FATALS)
 head(t_2015)
-```
-
 
     ##   ST_CASE FATALS
     ## 1   10008      1
@@ -176,7 +162,7 @@ head(t_2015)
     ## 4   10069      1
     ## 5   10128      1
     ## 6   10146      1
-
+```
 
 ```r
 ## Using pipe operator
@@ -185,8 +171,6 @@ t_2016 <-acc_veh_2016 %>%
   distinct(ST_CASE, .keep_all = TRUE) %>% 
   select(ST_CASE, FATALS)  
 head(t_2016)
-```
-
 
     ##   ST_CASE FATALS
     ## 1   10146      1
@@ -195,15 +179,13 @@ head(t_2016)
     ## 4   10398      1
     ## 5   10401      1
     ## 6   10408      1
-
+```
 
 ```r
 each_dead_2015 <- left_join(t_2015, p_2015, by = "ST_CASE")
 each_dead_2016 <- left_join(t_2016, p_2016, by = "ST_CASE")
 
 head(each_dead_2015)
-```
-
 
     ##   ST_CASE FATALS PER_TYP AGE SEX
     ## 1   10008      1       5  38   1
@@ -212,12 +194,10 @@ head(each_dead_2015)
     ## 4   10069      1       5  51   1
     ## 5   10128      1       5  51   1
     ## 6   10146      1       1  30   1
-
+```
 
 ```r
 head(each_dead_2016)
-```
-
 
     ##   ST_CASE FATALS PER_TYP AGE SEX
     ## 1   10146      1       5  59   1
@@ -226,14 +206,12 @@ head(each_dead_2016)
     ## 4   10398      1       5  69   1
     ## 5   10401      1       5  30   1
     ## 6   10408      1       5  55   1
-
+```
 
 ```r
 ## build contigency table of counts of Age
 Age_wo_2015 <- table(each_dead_2015$AGE, exclude = NULL)
 print(Age_wo_2015)
-```
-
 
     ## 
     ##   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20 
@@ -246,7 +224,7 @@ print(Age_wo_2015)
     ##  20  23  14  28  17  18  23  14  12   6   8  15   6   6   9   6   5   4   5   8 
     ##  81  82  83  84  85  86  87  88  89  91  92  93  94  95 998 999 
     ##   3   2   6   7   1   4   5   2   1   1   2   2   2   1   9   9
-
+```
 
 ```r  
 Age_2015 <- table(cut(each_dead_2015$AGE, breaks = c(0,16,29,59,120)),
@@ -255,21 +233,19 @@ Age_2016 <- table(cut(each_dead_2016$AGE, breaks = c(0,16,29,59,120)),
                    exclude = NULL)
 
 print(Age_2015)
-```  
 
     ## 
     ##   (0,16]  (16,29]  (29,59] (59,120]     <NA> 
     ##       99      472      957      315       18
-
+```
 
 ```r  
 print(Age_2016)
-```  
 
     ## 
     ##   (0,16]  (16,29]  (29,59] (59,120]     <NA> 
     ##      101      556     1070      403       26
-
+```
 
 ```r
 Age_year <- as.data.frame(rbind(Age_2015, Age_2016))
@@ -278,11 +254,11 @@ colnames(Age_year) <- c("0-16", "16-29", "30-59", "over 60", "NA")
 rownames(Age_year) <- c(2015, 2016)
 Age_year <- rownames_to_column(Age_year, "Year")
 print(Age_year)
-```  
 
     ##   Year 0-16 16-29 30-59 over 60 NA
     ## 1 2015   99   472   957     315 18
     ## 2 2016  101   556  1070     403 26
+```
 
 <br />
 
