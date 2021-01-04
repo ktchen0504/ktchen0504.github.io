@@ -6,10 +6,5 @@ github_username: ktchen0504
 
 #Build settings
 name: Kuan-Ting Chen
-markdown: kramdown
- kramdown: 
-+  input: GFM
-   parse_block_html: true
- permalink: /blog/:year/:month/:day/:title
- highlight: pygments
+permalink: /blog/:year/:month/:day/:title
 
