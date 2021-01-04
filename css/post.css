@@ -1,16 +1,16 @@
 /*--   post page  --*/
 
-.posts h1 {
+.posts>h1 {
   font-size: 2.5rem;
   font-weight: 550;
   font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
-.posts p {
+.posts>p {
   font-size: 1.25rem;
   line-height: 1.4em;
   color: #333;
 }
-.posts ul {
+.posts>ul {
 
   line-height: 1.4em;
   color: #333;
