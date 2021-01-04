@@ -4,7 +4,7 @@ title: "Project List"
 date: 2020-12-31
 ---
 
-#### This page lists my previous research porjects. Some of them have additional posts for more detailed introduction.  
+#### This page lists my previous research porjects. Some of them have additional posts for more detailed introduction. This stie is still under construction, more posts to be updated...  
   
 ---
   
