@@ -3,6 +3,8 @@ layout: post
 title: "FARS Data Note"
 subtitle: "A note for data wrangling and visualization using R."
 date: 2018-08-25
+always_allow_html: yes
+output: github_document
 ---
 
 This is a note for the Fatality Analysis Reporting System (FARS) data. A
