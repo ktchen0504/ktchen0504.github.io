@@ -280,8 +280,8 @@ p.inner{
 	top:50%;
 	left:25%;
 	/*transform: translate(-15%, -50%) rotate(90deg);*/
-	-webkit-transform: translate(8%, -50%);
-	-moz-transform: translate(-15%, -50%);
+	-webkit-transform: translate(-25%, -50%);
+	-moz-transform: translate(-25%, -50%);
 }
 
 /* ================================================
@@ -428,8 +428,8 @@ responsive
 		display:none;
 	}
 	.col3 .pic-frame img {
-		-webkit-transform: translate(0, -50%);
-		-moz-transform: translate(-15%, -50%) ;
+		-webkit-transform: translate(-25, -50%);
+		-moz-transform: translate(-25%, -50%) ;
 	}
 	.sec4 {margin-top:950px;}
 
