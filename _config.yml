@@ -7,9 +7,9 @@ github_username: ktchen0504
 #Build settings
 name: Kuan-Ting Chen
 markdown: kramdown
+highlighter: rouge
 
 kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
 
 permalink: /blog/:year/:month/:day/:title
