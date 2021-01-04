@@ -29,7 +29,7 @@ section of about with timeline
 
 .wrap-row > div {
 	/*border: 2px solid orange;*/
-  	font-family: 'Noto Sans',sans-serif;
+  	font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .wrap-row>.grid-n, .wrap-row>.grid-2n {
@@ -140,6 +140,7 @@ section of about with timeline
 	display: block;
 }
 .wrap-ri >.ri > .grid-heading > span {
+	font-size:1.2rem;
 	background: rgba(255,250,185,0.8);
 	line-height: 1.2em;
 }
@@ -392,5 +393,9 @@ responsive
 	.edu>.grid-heading, .exp>.grid-heading, .ri>.grid-heading{
 		font-size: 1rem;
 		margin-bottom: 10px;
+	}
+	.wrap-ri >.ri > .grid-heading > span {
+		font-size:1rem;
+		line-height: 1em;
 	}
 }
