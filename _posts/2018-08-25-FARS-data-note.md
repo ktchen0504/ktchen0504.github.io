@@ -10,7 +10,7 @@ hit-and-run data wrangling was conducted during the internship at [AAA
 Foundation for Traffic Safety](https://aaafoundation.org/) on summer,
 2018.
 
------
+---
 
 #### Outline
 
@@ -33,7 +33,7 @@ Foundation for Traffic Safety](https://aaafoundation.org/) on summer,
   - ggplot2
       - geom\_bar
 
------
+---
 
 #### 1\. Fatality Analysis Reporting System (FARS) data set
 
@@ -42,8 +42,7 @@ suffered in motor vehicle traffic crashes across the United States,
 including 50 States, District of Columbia, and Pureto Rico.  
 [FARS
 website](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars)
-–
-<https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars>
+
 
 Where you can download raw data from:  
 [FARS Raw Data](ftp://ftp.nhtsa.dot.gov/FARS) –
@@ -51,8 +50,7 @@ Where you can download raw data from:
 As of the date of the internship, it has records from 1975 to 2017.
 
 Manuals and documents of FARS:  
-[FARS Manuals](https://crashstats.nhtsa.dot.gov/#/DocumentTypeList/4) –
-<https://crashstats.nhtsa.dot.gov/#/DocumentTypeList/4>
+[FARS Manuals](https://crashstats.nhtsa.dot.gov/#/DocumentTypeList/4)  
 
 #### What are included in FARS?
 
@@ -65,7 +63,7 @@ Manuals and documents of FARS:
 ##### Read the data file into R
 
 
-~~~r
+```r
 ## Load necessary library
 library(tidyverse)
 
@@ -81,15 +79,15 @@ for(X in 2015:2016){
   assign(v1, read.csv(v0, header = TRUE, sep = ","))
   assign(a1, read.csv(a0, header = TRUE, sep = ","))
 }
-~~~
+```
 
 
 ##### Take a look at the data
 
 
-~~~r
+```r
 head(as_data_frame(per_2015))
-~~~
+```
 
 
     ## Warning: `as_data_frame()` is deprecated as of tibble 2.0.0.
@@ -121,17 +119,16 @@ head(as_data_frame(per_2015))
     ## #   DEATH_TM <int>, LAG_HRS <int>, LAG_MINS <int>, P_SF1 <int>, P_SF2 <int>,
     ## #   P_SF3 <int>, WORK_INJ <int>, HISPANIC <int>, RACE <int>, LOCATION <int>
 
-<br />
 
 ##### Pipe operator (%\>%) from magrittr
 
 
-~~~ r
+```r
 ## Using multiple object option 
 per_2015 <-filter(per_2015, INJ_SEV == 4)
 p_2015 <- select(per_2015, ST_CASE, PER_TYP, AGE, SEX)
 head(p_2015)
-~~~
+```
 
 
     ##   ST_CASE PER_TYP AGE SEX
@@ -143,12 +140,12 @@ head(p_2015)
     ## 6   10006       1  64   1
 
 
-~~~ r
+```r
 ## Using pipe operator
 p_2016 <- per_2016 %>% filter(INJ_SEV==4) %>%
   select(ST_CASE, PER_TYP, AGE, SEX)
 head(p_2016)
-~~~
+```
 
 
     ##   ST_CASE PER_TYP AGE SEX
@@ -160,7 +157,7 @@ head(p_2016)
     ## 6   10006       1  58   1
 
 
-~~~r
+```r
 acc_veh_2015 <- merge(acc_2015, veh_2015, by = intersect(names(acc_2015), names(veh_2015)), all=TRUE)
 acc_veh_2016 <- merge(acc_2016, veh_2016, by = intersect(names(acc_2016), names(veh_2016)), all=TRUE)
 
@@ -169,7 +166,7 @@ acc_veh_2015_clean <- filter(acc_veh_2015, HIT_RUN !=0)
 acc_veh_2015_clean <- distinct(acc_veh_2015_clean, ST_CASE, .keep_all = TRUE)
 t_2015 <- select(acc_veh_2015_clean, ST_CASE, FATALS)
 head(t_2015)
-~~~
+```
 
 
     ##   ST_CASE FATALS
@@ -181,14 +178,14 @@ head(t_2015)
     ## 6   10146      1
 
 
-~~~r
+```r
 ## Using pipe operator
 t_2016 <-acc_veh_2016 %>%
   filter(HIT_RUN != 0) %>%
   distinct(ST_CASE, .keep_all = TRUE) %>% 
   select(ST_CASE, FATALS)  
 head(t_2016)
-~~~
+```
 
 
     ##   ST_CASE FATALS
@@ -200,12 +197,12 @@ head(t_2016)
     ## 6   10408      1
 
 
-~~~r
+```r
 each_dead_2015 <- left_join(t_2015, p_2015, by = "ST_CASE")
 each_dead_2016 <- left_join(t_2016, p_2016, by = "ST_CASE")
 
 head(each_dead_2015)
-~~~
+```
 
 
     ##   ST_CASE FATALS PER_TYP AGE SEX
@@ -217,9 +214,9 @@ head(each_dead_2015)
     ## 6   10146      1       1  30   1
 
 
-~~~r
+```r
 head(each_dead_2016)
-~~~
+```
 
 
     ##   ST_CASE FATALS PER_TYP AGE SEX
@@ -231,11 +228,11 @@ head(each_dead_2016)
     ## 6   10408      1       5  55   1
 
 
-~~~r
+```r
 ## build contigency table of counts of Age
 Age_wo_2015 <- table(each_dead_2015$AGE, exclude = NULL)
 print(Age_wo_2015)
-~~~
+```
 
 
     ## 
@@ -251,39 +248,37 @@ print(Age_wo_2015)
     ##   3   2   6   7   1   4   5   2   1   1   2   2   2   1   9   9
 
 
-~~~r  
+```r  
 Age_2015 <- table(cut(each_dead_2015$AGE, breaks = c(0,16,29,59,120)),
                    exclude = NULL)
 Age_2016 <- table(cut(each_dead_2016$AGE, breaks = c(0,16,29,59,120)),
                    exclude = NULL)
 
 print(Age_2015)
-~~~  
+```  
 
     ## 
     ##   (0,16]  (16,29]  (29,59] (59,120]     <NA> 
     ##       99      472      957      315       18
 
 
-~~~r  
+```r  
 print(Age_2016)
-~~~  
-
+```  
 
     ## 
     ##   (0,16]  (16,29]  (29,59] (59,120]     <NA> 
     ##      101      556     1070      403       26
 
 
-~~~r
+```r
 Age_year <- as.data.frame(rbind(Age_2015, Age_2016))
 
 colnames(Age_year) <- c("0-16", "16-29", "30-59", "over 60", "NA")
 rownames(Age_year) <- c(2015, 2016)
 Age_year <- rownames_to_column(Age_year, "Year")
 print(Age_year)
-~~~
-
+```  
 
     ##   Year 0-16 16-29 30-59 over 60 NA
     ## 1 2015   99   472   957     315 18
