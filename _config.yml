@@ -6,5 +6,6 @@ github_username: ktchen0504
 
 #Build settings
 name: Kuan-Ting Chen
+markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
