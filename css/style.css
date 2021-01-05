@@ -22,7 +22,7 @@ body {
 	border-bottom:10px solid #323444;
 	font-family: 'Montserrat', Arial, sans-serif;
 	position: fixed;
-	overflow-y: scroll;
+	overflow-y: auto;
 	top:0;
 	bottom:0;
 }
@@ -476,7 +476,7 @@ responsive
 		top: 0;
 		left:0;
 		z-index: 3;
-		overflow-y: visible;
+		/*overflow-y: visible;*/
 	}
 	.navigate-bar >div {
 		height:60px;
