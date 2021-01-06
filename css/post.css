@@ -36,3 +36,13 @@
   list-style-type: none;
   padding-left: 0;
 }
+
+@media (max-width: 485px){
+.blog-footer {
+  border-top: 1px solid #d5d5d5;
+  font-size: 1.125em;  
+  margin:0 40px;
+  padding: 0;
+}
+
+}
