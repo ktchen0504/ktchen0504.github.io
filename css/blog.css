@@ -59,7 +59,6 @@
 
 .blog-footer {
   border-top: 1px solid #d5d5d5;
-  font-size: 1.25em;  
   max-width: 1140px;
   margin:auto;
   padding:40px 0;
@@ -69,6 +68,8 @@
 .blog-footer ul {
   list-style-type: none;
   padding-left: 0;
+    font-size:14px;
+  color: #49639f;
 }
 
 @media (max-width: 485px){
