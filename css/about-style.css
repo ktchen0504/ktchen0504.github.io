@@ -24,7 +24,7 @@ section of about with timeline
  	min-height: 65vh;
  	padding: 3rem 5rem;
   	border: 5px solid #3f5c76;
-  	background:#f7f7f7;	
+  	background:#e9ecf1;	
 }
 
 .wrap-row > div {
@@ -37,7 +37,7 @@ section of about with timeline
   	justify-content:start;
   	justify-self:start;
   	margin-left:-60px;
-  	background: #f7f7f7;  	
+  	background: #e9ecf1;  	
 }
 
 .grid-n > p {
@@ -252,14 +252,14 @@ responsive
 	 	min-height: 65vh;
 	 	padding: 2rem 4rem;
 	  	border: 5px solid #3f5c76;
-	  	background:#f7f7f7;	
+	  	background:#e9ecf1;	
 	}
 	.wrap-row>.grid-n, .wrap-row>.grid-2n {
 	  	grid-column:1/2;
 	  	justify-content:start;
 	  	justify-self:start;
 	  	/*margin-left:-60px;*/
-	  	background: #f7f7f7;  
+	  	background: #e9ecf1;  
 	}
 	.wrap-row>.grid-n>p, .wrap-row>.grid-2n>p {
 		font-size: 1.4rem;			
@@ -374,7 +374,7 @@ responsive
 	 	min-height: 65vh;
 	 	padding: 2rem 1rem;
 	  	border: 5px solid #3f5c76;
-	  	background:#f7f7f7;	
+	  	background:#e9ecf1;	
 	}
 	.wrap-ri {
 		height: 80vh;

@@ -25,7 +25,7 @@ section of contact
 	flex-direction: row;
 	border: 5px solid #3f5c76;
 	min-width: 60%;
-	background: #f7f7f7;
+	background: #e9ecf1;
 }
 
 .outer > .info {
@@ -185,7 +185,7 @@ section of contact
 		text-align: left;
 		width: 90%;
 		border: 5px solid #3f5c76;
-		background: #f7f7f7;
+		background: #e9ecf1;
 		margin: 15px 0;
 		padding: 15px;
 	}
@@ -265,7 +265,7 @@ section of contact
 		text-align: left;
 		width: 100%;
 		border: 5px solid #3f5c76;
-		background: #f7f7f7;
+		background: #e9ecf1;
 		padding: 10px;
 	}
 
