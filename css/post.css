@@ -17,13 +17,13 @@
   line-height: 1.4em;
   color: #333;
 }
-/*
+
 .posts>.post>p {
-  font-size: 1.25em;
+  font-size: 1.125em;
 }
 .posts>.post>ul {
-  font-size: 1.25rem;
-}*/
+  font-size: 1.125rem;
+}
 
 .blog-footer {
   border-top: 1px solid #d5d5d5;
@@ -31,6 +31,8 @@
   max-width: 1140px;
   margin:auto;
   padding:40px 0;
+  display: flex;
+  justify-content: center;
 }
 .blog-footer ul {
   list-style-type: none;

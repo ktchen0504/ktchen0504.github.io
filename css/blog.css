@@ -63,6 +63,8 @@
   max-width: 1140px;
   margin:auto;
   padding:40px 0;
+  display: flex;
+  justify-content: center;
 }
 .blog-footer ul {
   list-style-type: none;
