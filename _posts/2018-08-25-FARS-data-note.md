@@ -303,4 +303,4 @@ p <- ggplot(Age_reshape)+
 print(p)
 ```
 
-<img src="/public/post_img/FARS_by_age.png"  style="margin: 0px 0px 0px 10px; width: 40%; height: 40%;" />
+<img src="/public/post_img/FARS_by_age.png"  style="margin: 0px 0px 0px 10px; width: 60%; height: 60%;" />
