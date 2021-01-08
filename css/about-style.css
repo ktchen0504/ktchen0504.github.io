@@ -357,7 +357,10 @@ responsive
 	}
 	
 	/* Start about section*/
-	
+	.sec4 {
+		margin-top: 60px;
+	}
+
 	#main-content {
 		margin:90px 0 0 0;
 		width:100%;

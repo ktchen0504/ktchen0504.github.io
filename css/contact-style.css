@@ -193,9 +193,9 @@ section of contact
 }
 
 @media (max-width: 485px) {
-    .sec4 {
+    /*.sec4 {
         margin-top: 20px;
-    }
+    }*/
     .overall-wrap {
 		display: flex;
 		width: 100%;
