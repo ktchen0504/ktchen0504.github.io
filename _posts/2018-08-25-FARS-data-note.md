@@ -300,7 +300,7 @@ p <- ggplot(Age_reshape)+
   scale_fill_manual(values=wes_palette(name="Chevalier1"))+
   theme(axis.text.x=element_text(angle=45,hjust=0.5, vjust=0.4),
         plot.title = element_text(hjust = 0.5))
-p
+print(p)
 ```
 
-![](2018-08-25-FARS-data-note_files/figure-gfm/barplot-1.png)<!-- -->
+<img src="/public/post_img/FARS_by_age.png"  style="margin: 0px 0px 0px 10px; width: 40%; height: 40%;" />
