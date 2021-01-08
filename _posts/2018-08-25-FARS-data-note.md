@@ -63,7 +63,7 @@ Manuals and documents of FARS:
   - Person data
 
 ##### Read the data file into R
-
+Following examples using only the data from 2015 to 2016.
 
 ```r
 ## Load necessary library
@@ -263,4 +263,44 @@ print(Age_year)
 
 -----
 
-#### 2\. ggplot2 for data visualization
+#### 2\. ggplot2 for data visualization  
+
+```r
+library(wesanderson) # load color palette
+Age_year[, "NA"] <- NULL
+
+# reshpae to long format
+Age_reshape <- gather(Age_year, Age, Counts, 2:5)
+
+print(Age_reshape)
+```
+
+    ##   Year     Age Counts
+    ## 1 2015    0-16     99
+    ## 2 2016    0-16    101
+    ## 3 2015   16-29    472
+    ## 4 2016   16-29    556
+    ## 5 2015   30-59    957
+    ## 6 2016   30-59   1070
+    ## 7 2015 over 60    315
+    ## 8 2016 over 60    403
+
+```r
+p <- ggplot(Age_reshape)+
+  geom_bar(mapping = aes(x = Age, y = Counts, fill = Year), width = 0.5,
+           position = "dodge", stat="identity")+ 
+  coord_cartesian(ylim=c(0,1200))+
+  theme_light()+
+  xlab("Age Range")+
+  ylab("Fatality Counts")+
+  ggtitle("Fatalities by Age")+
+  theme_light()+
+  theme(legend.position="bottom", legend.direction="horizontal",
+        legend.title = element_blank())+ 
+  scale_fill_manual(values=wes_palette(name="Chevalier1"))+
+  theme(axis.text.x=element_text(angle=45,hjust=0.5, vjust=0.4),
+        plot.title = element_text(hjust = 0.5))
+p
+```
+
+![](2018-08-25-FARS-data-note_files/figure-gfm/barplot-1.png)<!-- -->

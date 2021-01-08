@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Project List"
+subtitle: "An overview of my previous research experience"
 date: 2020-12-31
 ---
 
 #### This page lists my previous research porjects. Some of them have additional posts for more detailed introduction.   
-#### The project site is still under construction, more posts to be updated...  
+#### More posts to be updated...  
   
 ---
   
