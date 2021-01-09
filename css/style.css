@@ -74,7 +74,7 @@ div.bg2:hover {
 	height: 140px;
 }
 #sidebar.active {
-    margin-left: -165px; /*-150px;*/
+    margin-left: -150px; /*-150px;*/
 }
 .container-fluid {
 	display: flex;
@@ -131,7 +131,7 @@ landing page
 	justify-content: flex-start;
 }
 #main-content.active {
-	margin-left: 165px;/*150px;*/
+	margin-left: 150px;/*150px;*/
 	width: 100%;
 }
 section {
