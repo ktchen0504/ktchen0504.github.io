@@ -14,3 +14,6 @@ kramdown:
 
 permalink: /blog/:year/:month/:day/:title
 
+# Google Analytics
+google_analytics: G-2NG9T3T6Q1
+
