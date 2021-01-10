@@ -59,5 +59,5 @@ Conducted systematic review regarding detection time of drug usage with oral flu
 - Development of timetable stability and effieicney evaluation model.  
 Lai, Y.-C, **Chen, K.-T.**  
 This research proposed an analytic framework to evaluate timetable stability based on our proposed index “recovery time”. A monte carlo simulation method was proposed to further consider railway operation uncertainty.  
-[`[Paper 1]`](https://ascelibrary.org/doi/10.1061/JTEPBS.0000038), 
+[`[Paper 1]`](https://ascelibrary.org/doi/10.1061/JTEPBS.0000038) 
 [`[Paper 2]`](https://journals.sagepub.com/doi/abs/10.1177/0361198118790325)  
