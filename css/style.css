@@ -215,10 +215,10 @@ p.inner{
 
 .lab-link {
 	text-decoration: none;
-	color: #868f90;
+	color: #529fd9;
 }
 
-.lab-link::before {
+/*.lab-link::before {
 	content: '';
 	background: #6B959A;
 	z-index: 1;
@@ -229,7 +229,7 @@ p.inner{
 	bottom: -3px;
 
 }
-
+*/
 .inner2::after {
 	content:"";
     background-color: #6B959A;
