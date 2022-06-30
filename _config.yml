@@ -15,5 +15,5 @@ kramdown:
 permalink: /blog/:year/:month/:day/:title
 
 # Google Analytics
-google_analytics: UA-186978110-1
+google_analytics: G-E8TSM1H8M0
 
