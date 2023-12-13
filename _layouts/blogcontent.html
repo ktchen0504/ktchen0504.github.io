@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-E8TSM1H8M0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'G-E8TSM1H8M0');
+	</script>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ page.title }}</title>
 	<!-- link to main stylesheet -->
@@ -11,9 +21,9 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans|Tangerine">
 	<link rel="stylesheet" type="text/css" href="/css/blog.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
-	{% if site.google_analytics%}
+	<!-- {% if site.google_analytics%}
 	{% include google_analytics.html %}
-	{% endif %}
+	{% endif %} -->
 </head>
 <body>
 	<div class="overall-wrap">
