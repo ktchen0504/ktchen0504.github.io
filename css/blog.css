@@ -7,7 +7,7 @@ html, body {
 }
 
 .post-preview {
-  padding: 40px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #eee;
   max-width: 1100px;
   margin:auto;
@@ -36,7 +36,7 @@ html, body {
 }
 
 .posts {
-  padding: 40px 0;
+  padding: 10px 0;
   max-width: 1100px;
   margin:auto;
 }
