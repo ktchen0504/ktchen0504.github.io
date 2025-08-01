@@ -13,148 +13,92 @@
 
 	<meta charset = "utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact</title>
-	
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/contact-style.css">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans|Tangerine">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-</head>
+	<!-- Font Awesome for LinkedIn, GitHub -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<!-- Academicons for Google Scholar -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Josefin+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+	<link href="https://api.fontshare.com/v2/css?f[]=soria@400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/contact.css">	
+	</head>
 <body>
-	<div class="overall-wrap">
-		<div class="navigate-bar" id="sidebar">
-			<div class = "bg1 sidebar-name active">
-				<h2><i class="fas fa-car"></i>KT</h2>
+	<nav class="top-nav">
+    	<div class="nav-inner">
+			<div class="nav-left">
+				<a href="index.html" class="logo">KT</a>
 			</div>
-			<div class = "bg2 sidebar-main">
-				<h2><a href="index.html" class="scroll"><i class="fas fa-id-card-alt"></i><p>Main</p></a></h2>			
+			<div class="nav-right">
+				<a href="index.html" class="nav-link">Main</a>
+				<a href="about.html" class="nav-link ">About</a>
+				<a href="blog" class="nav-link">Project</a>
+				<a href="contact.html" class="nav-link active">Contact</a>
+				<a href="https://www.linkedin.com/in/ktchen0504/" target="_blank" class="icon-link" aria-label="LinkedIn">
+				<i class="fab fa-linkedin"></i></a>
+				<a href="https://github.com/ktchen0504" target="_blank" class="icon-link" aria-label="GitHub">
+				<i class="fab fa-github"></i></a>
+				<a href="https://scholar.google.com/citations?user=ojPAl5oAAAAJ&hl=en" target="_blank" class="icon-link" aria-label="Google Scholar">
+				<i class="ai ai-google-scholar-square"></i></a>
 			</div>
-			<div class = "bg2 sidebar-exp">
-				<h2><a href="about.html" class="scroll"><i class="fas fa-file-invoice"></i><p>About</p></a></h2>	
-			</div>
-			<div class = "bg2 sidebar-proj">
-				<h2><a href="/blog/index.html" class="scroll"><i class="fas fa-microscope"></i><p>Projects</p></a></h2>					
-			</div>
-			<div class = "bg2 sidebar-contact">
-				<h2><a href="contact.html" class="scroll"><i class="fas fa-paper-plane"></i><p>Contact</p></a></h2>					
-			</div>
-			<div class = "bg1 social">
-				<div class = "tw"><a href="https://twitter.com/ktchen0504" target="_blank" class="fab fa-twitter-square fa-2x tw"></a></div>
-				<div class = "ln"><a href="http://www.linkedin.com/in/ktchen0504" target="_blank" class="fab fa-linkedin fa-2x ln"></a></div>
-				<div class = "gh"><a href="https://github.com/ktchen0504" class="fab fa-github" style="font-size:28px"></a></div>
-			</div>
+    	</div>
+  	</nav>
+	
+	<!-- Container 1: Contact Info -->
+	<div class="container contact-info">
+		<h1>Contact</h1>
+		<p>Feel free to reach out or click on my social media.</p>
+
+		<div class="info-block">
+		<div class="icon-col"><i class="fas fa-map-marker-alt"></i></div>
+		<div class="text-col">
+			<div class="label">Location</div>
+			<div class="value">Taiwan → USA</div>
 		</div>
-		<!-- Page Content  -->
-		
-		<div id = "main-content" class="active">
-			<!-- Sidebar toggle button-->	
-			<div class="container-fluid">
-				<button type="button" id="sidebarCollapse" class="btn btn-info">
-					<i class="fas fa-bars"></i><span></span>
-	        	</button>
-	    	</div>
-    		<!-- End sidebar toggle button -->
+		</div>
 
-			<section class="sec4 contact" id="a0">
-				<div class = "outer"> 
-					<div class = "info">
-						<h2> Contact </h2>
-						<p> Feel free to reach out or click on my social media.</p>
-						<div class = "box">
-							<div class = "icon"><i class="far fa-map"></i></div>
-							<div class = "text">
-								<h3>Location</h3>
-								<p>Taiwan <i class="fas fa-chevron-right"></i> USA</p>
-							</div>
-						</div>
-						<div class = "box">
-							<div class = "icon"><i class="far fa-paper-plane"></i></div>
-							<div class = "text">
-								<h3>Email</h3>
-								<p>kchen67@buffalo.edu</p>
-							</div>
-						</div>
-					</div>
-
-					<div class = "contactForm">
-						<form method = "post" autocomplete = "off" name="submit-to-google-sheet">
-							<h2>Send Message</h2>
-							<div class = "inputbox">
-								<input type = "text" name = "name" required = "required">
-								<span>Your Name</span>
-							</div>
-							<div class = "inputbox">
-								<input type = "text" name = "email" required = "required">
-								<span>Your Email</span>
-							</div>
-							<div class = "inputbox">
-								<textarea name = "msg" required = "required"></textarea>
-								<span>Your Message Here</span>
-							</div>
-							<div class = "inputbox">
-								<input type = "submit" name = "" value = "Send">
-							</div>
-						</form>
-						<div id = "status">
-						 <!-- You can customize the thankyou message by editing the code below -->
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<footer class = "footer">
-				<div class="copyright">
-					<p>&copy Kuan-Ting Chen @ 2021</p>
-				</div>
-			</footer>
+		<div class="info-block">
+		<div class="icon-col"><i class="fas fa-envelope"></i></div>
+		<div class="text-col">
+			<div class="label">Email</div>
+			<div class="value">kchen67@buffalo.edu</div>
+		</div>
 		</div>
 	</div>
 
+	<!-- Container 2: Send Message Form -->
+	<div class="container contact-form">
+		<div class="form-box">
+		<h2>Send Message</h2>
+		<form name = "submit-to-google-sheet">
+			<input type="text" placeholder="Your Name" required>
+			<input type="email" placeholder="Your Email" required>
+			<textarea placeholder="Your Message Here" rows="5" required></textarea>
+			<button type="submit">Send</button>
+		</form>
+		</div>
+	</div>
+	<div id="status"></div>
+
 	<script>
-	  //script link to google sheet 
-	  const status = document.getElementById("status");
-	  
-	  const scriptURL = 'https://script.google.com/macros/s/AKfycbys33EpsVt5uEwng_en3DHmIyHoStP7e1tdogzyll0e_7xUN0Q/exec';
-	  const form = document.forms['submit-to-google-sheet'];
+	const status = document.getElementById("status");
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbys33EpsVt5uEwng_en3DHmIyHoStP7e1tdogzyll0e_7xUN0Q/exec';
+	const form = document.forms['submit-to-google-sheet'];
 
-	  form.addEventListener('submit', e => {
-	    e.preventDefault()
-	    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-	      .then(response => {form.reset();
-	      	status.innerHTML = 'Thanks!';
-	      	status.classList.add('thankyou_message');
-	      	console.log('Success!', response);})//console.log('Success!', response))
-	      .catch(error => console.error('Error!', error.message))
-	  })
-	</script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-	<script>
- 		//scrolling script	
- 		
-		$(document).ready(function() {
-
-			// var scrollLink = $('.scroll');
-
-			// scrollLink.click(function(e) {
-			// 	e.preventDefault();
-			// 	$('body, html').animate({
-			// 		scrollTop: $(this.hash).offset().top}, 800, function(){
-			// 			window.location.hash = $(this.hash);
-			// 		});
-			// 	//console.log(scrollLink);
-			// })
-
-    		$('#sidebarCollapse').on('click', function () {
-        		$('#sidebar').toggleClass('active');
-        		$('#main-content').toggleClass('active');
-			});
-	
+	form.addEventListener('submit', e => {
+		e.preventDefault();
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+		.then(response => {
+			form.reset();
+			status.innerHTML = 'Thanks!';
+			status.classList.add('thankyou_message');
+		})
+		.catch(error => {
+			status.innerHTML = 'Oops! Something went wrong.';
+			console.error('Error!', error.message);
 		});
-
+	});
 	</script>
+
 
 </body>
 </html>

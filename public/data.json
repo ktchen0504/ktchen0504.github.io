@@ -1,0 +1,46 @@
+{
+  "experience": [
+    {
+      "title": "Transportation Safety Researcher",
+      "organization": "Virginia Tech Transportation Institute",
+      "year": "2023–2025"
+    },
+    {
+      "title": "Human Factors Engineer",
+      "organization": "Locomation, Inc.",
+      "year": "2022–2023"
+    },
+    {
+      "title": "Human-Machine Interface Engineer",
+      "organization": "X-Energy, LLC",
+      "year": "2021–2022"
+    },
+    {
+      "title": "Research Intern",
+      "organization": "AAA Foundation for Traffic Safety",
+      "year": "2018 Summer"
+    },
+    {
+      "title": "Rail Engineer",
+      "organization": "TUV Rheinland Taiwan Ltd.",
+      "year": "2013-2015"
+    }
+  ],
+  "education": [
+    {
+      "title": "Ph.D., Industrial Engineering",
+      "organization": "University at Buffalo",
+      "year": "2022"
+    },
+    {
+      "title": "M.S., Civil Engineering",
+      "organization": "National Taiwan University",
+      "year": "2012"
+    },
+    {
+      "title": "B.S., Civil Engineering",
+      "organization": "National Taiwan University",
+      "year": "2010"
+    }
+  ]
+}

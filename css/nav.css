@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+}
+
+/* Main content wrapper */
+.container {
+	width: 40%;
+	min-width: 280px;
+	max-width: 600px;
+	margin: 5rem auto;
+	padding: 0 1rem;
+	line-height: 1.6;
+}
+
+/* Navigation bar on top*/
+.top-nav {
+	width: 100%;
+	background-color: rgba(20, 33, 61, 0.9);
+	color: white;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* NEW: inner container for centering nav content */
+.nav-inner {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0.75rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo-left {
+	flex-shrink: 0;
+}
+
+.logo {
+	font-size: 2rem;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+  	text-decoration: none;
+  	color: #e5e5e5;
+  	margin-right: 2rem;
+}
+
+.nav-right {
+	font-size: 1.1rem;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 1rem;
+	overflow-x: auto;
+}
+
+.nav-link,
+.icon-link {
+  	text-decoration: none;
+  	color: #e5e5e5;
+	margin-left: 0.5rem;
+}
+
+.nav-link.active {
+	color: rgba(252, 163, 17, 1);
+	
+}
+
+.nav-link:hover,
+.icon-link:hover {
+  color: rgba(252, 163, 17, 0.8);
+}
+
+.icon-link i {
+  font-size: 1.3rem;
+  line-height: 1;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.icon-link .ai {
+  font-size: 1.4rem;  /* Slightly larger for Academicons to match */
+}
+
+/* end nav bar setup*/

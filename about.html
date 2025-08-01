@@ -13,184 +13,110 @@
 
 	<meta charset = "utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>About KT</title>
+	<!-- Font Awesome for LinkedIn, GitHub -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<!-- Academicons for Google Scholar -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Josefin+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+	<link href="https://api.fontshare.com/v2/css?f[]=soria@400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/about.css">	
 	
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/about-style.css">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans|Tangerine">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 </head>
 <body>
-	<div class="overall-wrap">
-		<div class="navigate-bar" id="sidebar">
-			<div class = "bg1 sidebar-name active">
-				<h2><i class="fas fa-car"></i>KT</h2>
+	<nav class="top-nav">
+    	<div class="nav-inner">
+			<div class="nav-left">
+				<a href="index.html" class="logo">KT</a>
 			</div>
-			<div class = "bg2 sidebar-main">
-				<h2><a href="index.html" class="scroll"><i class="fas fa-id-card-alt"></i><p>Main</p></a></h2>			
+			<div class="nav-right">
+				<a href="index.html" class="nav-link">Main</a>
+				<a href="about.html" class="nav-link active">About</a>
+				<a href="blog" class="nav-link">Project</a>
+				<a href="contact.html" class="nav-link">Contact</a>
+				<a href="https://www.linkedin.com/in/ktchen0504/" target="_blank" class="icon-link" aria-label="LinkedIn">
+				<i class="fab fa-linkedin"></i></a>
+				<a href="https://github.com/ktchen0504" target="_blank" class="icon-link" aria-label="GitHub">
+				<i class="fab fa-github"></i></a>
+				<a href="https://scholar.google.com/citations?user=ojPAl5oAAAAJ&hl=en" target="_blank" class="icon-link" aria-label="Google Scholar">
+				<i class="ai ai-google-scholar-square"></i></a>
 			</div>
-			<div class = "bg2 sidebar-exp">
-				<h2><a href="about.html" class="scroll"><i class="fas fa-file-invoice"></i><p>About</p></a></h2>	
-			</div>
-			<div class = "bg2 sidebar-proj">
-				<h2><a href="/blog" class="scroll"><i class="fas fa-microscope"></i><p>Projects</p></a></h2>					
-			</div>
-			<div class = "bg2 sidebar-contact">
-				<h2><a href="contact.html" class="scroll"><i class="fas fa-paper-plane"></i><p>Contact</p></a></h2>					
-			</div>
-			<div class = "bg1 social">
-				<div class = "tw"><a href="https://twitter.com/ktchen0504" target="_blank" class="fab fa-twitter-square fa-2x tw"></a></div>
-				<div class = "ln"><a href="http://www.linkedin.com/in/ktchen0504" target="_blank" class="fab fa-linkedin fa-2x ln"></a></div>
-				<div class = "gh"><a href="https://github.com/ktchen0504" class="fab fa-github" style="font-size:28px"></a></div>
-			</div>
-		</div>
-		<!-- Page Content  -->
-		
-		<div id = "main-content" class="active">
-			<!-- Sidebar toggle button-->	
-			<div class="container-fluid">
-				<button type="button" id="sidebarCollapse" class="btn btn-info">
-					<i class="fas fa-bars"></i><span></span>
-	        	</button>
-	    	</div>
-    		<!-- End sidebar toggle button -->
+    	</div>
+  	</nav>
 
-			<section class="sec4 about" id="a0">
-				<div class = "wrap-row wrap-edu">
-					<div class="grid-n grid-edu"> 
-						<p>EDUCATION</p> 
-					</div>
-					<div class="grid-1 edu">
-						<p class="grid-heading">PhD, 2021</p>	
-						<p> Applied Cognitive Engineering Lab</p>
-						<p> Industrial Engineering (Human Factors focus)</p>
-						<p> SUNY Buffalo</p>
-					</div>
-					<div class="grid-2 edu">
-						<p class="grid-heading">Master of Science, 2012</p>
-						<p> Civil Engineering (Transportation Engineering Division)</p>
-						<p> National Taiwan University</p>
-						<p>Thesis: Development of the Timetable Performance Evaluation System for Rail Transportation</p>
-					</div>
-					<div class="grid-3 edu">
-						<p class="grid-heading">Bachelor of Science, 2010</p>
-						<p> Civil Engineering </p>
-						<p> National Taiwan University</p>
-					</div>
-					<div class="grid-4 edu">
-						<p class="grid-heading">Certificate</p>
-						<p> UB Summer Academy: Inclusive Autonomous Vehicle Design Challenge, Summer 2020 </p>
-					</div>
-				</div>	
+  <!-- Section Nav -->
+  <div class="section-nav">
+    <a href="#experience">Exp</a> <span class="dot">•</span>
+    <a href="#education">Edu</a> <span class="dot">•</span>
+    <a href="#research-interest">Interest</a>
+  </div>
 
-				<div class = "wrap-row wrap-exp">
-					<div class="grid-2n grid-exp"> 
-						<p>EXPERIENCE</p> 
-					</div>
-					<div class="grid-1 exp">
-						<p class="grid-heading">Locomation, Inc</p>	
-						<p> Human Factors Engineer, 2022</p>
-						<ul>
-							<li>Support Human-Machine Interface development for operators of self-driving truck convoy.</li>
-							<li>Conduct human factors analyses and collaborate with UI design, safety and system engineers.</li>
-						</ul>
-					</div>
-					<div class="grid-2 exp">
-						<p class="grid-heading">X-Energy, LLC</p>	
-						<p> Human-Machine Interface Engineer, 2021-2022</p>
-						<ul>
-							<li>Coordinated human factors activities for developing nuclear reactor control room human-machine interface.</li>
-							<li>Collaborated on the development of Integrated Style Guide for Control human-machine interface design.</li>
-						</ul>
-					</div>
-					<div class="grid-3 exp">
-						<p class="grid-heading">AAA Foundation for Traffic Safety</p>	
-						<p> Summer Intern, Summer 2018</p>
-						<ul>
-							<li>Speed limit design process survey for the impact of speed limit change on traffic safety.</li>
-							<li>Fatality Analysis Reporting System data wrangling with R.</li>
-							<li>Systematic review of detection time of drug usage with oral fluid.</li>
-						</ul>
-					</div>
-					<div class="grid-4 exp">
-						<p class="grid-heading">SUNY Buffalo</p>
-						<p> Applied Cognitive Engineering Lab Research Assistant, 2017 - 2021</p>
-						<ul>
-							<li>A study of the effectiveness of blended sonification feedback for highly automated driving.</li>
-							<li>Using Naturalistic Driving Data to Examine the Influences of Driving Styles on Crash Severity Level.</li>
-						</ul>
-					</div>
-					<div class="grid-5 exp">
-						<p class="grid-heading">T&UumlV Rheinland Taiwan Ltd.</p>
-						<p> Railway Engineer, 2013 - 2015</p>
-						<ul>
-							<li>Independent Verification and Validation (IV&V) of various railway projects.</li>
-							<li>Railway System Assurance, including RAMS analysis and hazard log management.</li>
-						</ul>
-					</div>
-				</div>	
+  <!-- Experience Section -->
+  <div class="container">
+    <h1 id="experience">Experience</h1>
+    <div id = "experience-list"></div>
+  </div>
 
-				<div class = "wrap-row wrap-ri">
-					<div class="grid-n grid-ri"> 
-						<p>Research Interest</p> 
-					</div>
-					<div class="grid-1 ri">
-						<p class="grid-heading"><span>Traffic safety</span></p>	
-					</div>
-					<div class="grid-2 ri">
-						<p class="grid-heading"><span>Driver behavior</span></p>
-					</div>
-					<div class="grid-3 ri">
-						<p class="grid-heading"><span>Human-Automation Interaction</span></p>
-					</div>
-					<div class="grid-4 ri">
-						<p class="grid-heading"><span>Automated driving</span></p>
-					</div>
-					<div class="grid-5 ri">
-						<p class="grid-heading"><span>Intelligent vehicle systems</span></p>
-					</div>
-					<div class="grid-6 ri">
-						<p class="grid-heading"><span>Inclusive design for transportation systems</span></p>
-					</div>
-				</div>	
-			</section>
+  <hr>
 
-			<footer class = "footer">
-				<div class="copyright">
-					<p>&copy Kuan-Ting Chen @ 2021</p>
-				</div>
-			</footer>
-		</div>
-	</div>
+  <!-- Education Section -->
+  <div class="container">
+    <h1 id="education">Education</h1>
+    <div id="education-list"></div>
+  </div>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-	<script>
- 		//scrolling script	
- 		
-		$(document).ready(function() {
+  <hr>
 
-			// var scrollLink = $('.scroll');
+  <!-- Research Interest Section -->
+  <div class="container">
+    <h1 id="research-interest">Research Interest</h1>
+    <div class="research-box">
+      <div class="interest-tag">Driver Behavior</div>
+      <div class="interest-tag">Human-AI Interaction</div>
+      <div class="interest-tag">Autonomous Vehicles</div>
+      <div class="interest-tag">Human Factors</div>
+      <div class="interest-tag">Intelligent Vehicle Systems</div>
+    </div>
+  </div>
 
-			// scrollLink.click(function(e) {
-			// 	e.preventDefault();
-			// 	$('body, html').animate({
-			// 		scrollTop: $(this.hash).offset().top}, 800, function(){
-			// 			window.location.hash = $(this.hash);
-			// 		});
-			// 	//console.log(scrollLink);
-			// })
+  <script>
+    fetch('public/data.json')
+      .then(response => response.json())
+      .then(data => {
+        const expList = document.getElementById('experience-list');
+        const eduList = document.getElementById('education-list');
 
-    		$('#sidebarCollapse').on('click', function () {
-        		$('#sidebar').toggleClass('active');
-        		$('#main-content').toggleClass('active');
-			});
-	
-		});
+        // Populate experience
+        data.experience.forEach(item => {
+          const div = document.createElement('div');
+          div.className = 'experience-item';
+          div.innerHTML = `
+            <div>
+              <div class="title">${item.title}</div>
+              <div class="subtitle">${item.organization}</div>
+            </div>
+            <div>${item.year}</div>
+          `;
+          expList.appendChild(div);
+        });
 
-	</script>
+        // Populate education
+        data.education.forEach(item => {
+          const div = document.createElement('div');
+          div.className = 'education-item';
+          div.innerHTML = `
+            <div>
+              <div class="title">${item.title}</div>
+              <div class="subtitle">${item.organization}</div>
+            </div>
+            <div>${item.year}</div>
+          `;
+          eduList.appendChild(div);
+        });
+      })
+      .catch(error => console.error('Failed to load data:', error));
+  </script>
+
 
 </body>
 </html>
