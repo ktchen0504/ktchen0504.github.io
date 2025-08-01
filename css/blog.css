@@ -1,5 +1,11 @@
 /*--   blog post content page  --*/
 
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .post-preview {
   padding: 40px 0;
   border-bottom: 1px solid #eee;
