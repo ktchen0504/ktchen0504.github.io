@@ -55,17 +55,19 @@
   <div class="container">
     <h1 id="experience">Experience</h1>
     <div id = "experience-list"></div>
+    <hr class="section-divider">
   </div>
 
-  <hr>
+  <!-- <hr> -->
 
   <!-- Education Section -->
   <div class="container">
     <h1 id="education">Education</h1>
     <div id="education-list"></div>
+    <hr class="section-divider">
   </div>
 
-  <hr>
+  <!-- <hr> -->
 
   <!-- Research Interest Section -->
   <div class="container">
@@ -78,6 +80,11 @@
       <div class="interest-tag">Intelligent Vehicle Systems</div>
     </div>
   </div>
+
+  <footer class="site-footer">
+    &copy; Kuan-Ting Chen 2025
+  </footer>
+
 
   <script>
     fetch('public/data.json')
@@ -116,7 +123,6 @@
       })
       .catch(error => console.error('Failed to load data:', error));
   </script>
-
 
 </body>
 </html>

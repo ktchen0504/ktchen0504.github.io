@@ -53,6 +53,12 @@ body {
   padding: 0 1.5rem;
 }
 
+.section-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2rem 0;
+}
+
 h1, h2 {
   font-family: 'Soria', serif;
   font-weight: 400;
@@ -60,11 +66,11 @@ h1, h2 {
   margin-bottom: 1rem;
 }
 
-hr {
+/* hr {
   border: none;
   border-top: 1px solid #ccc;
   margin: 2rem 0;
-}
+} */
 
 .experience-item, .education-item {
   display: flex;
