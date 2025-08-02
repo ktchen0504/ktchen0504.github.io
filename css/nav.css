@@ -91,8 +91,8 @@
   font-size: 0.9rem;
   font-family: Inter, sans-serif;
   color: #777;
-  background-color: rgba(255, 255, 255, 0.7); /* or use your navbar bg */
+  background-color: rgba(255, 255, 255, 0.7); 
   border-top: 1px solid #ddd;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 /* end nav bar setup*/

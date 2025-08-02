@@ -43,41 +43,47 @@
     	</div>
   	</nav>
 	
-	<!-- Container 1: Contact Info -->
-	<div class="container contact-info">
-		<h1>Contact</h1>
-		<p>Feel free to reach out or click on my social media.</p>
+	<main class = "contact-content">
+		<!-- Container 1: Contact Info -->
+		<div class="container contact-info">
+			<h1>Contact</h1>
+			<p>Feel free to reach out or click on my social media.</p>
 
-		<div class="info-block">
-		<div class="icon-col"><i class="fas fa-map-marker-alt"></i></div>
-		<div class="text-col">
-			<div class="label">Location</div>
-			<div class="value">Taiwan → USA</div>
-		</div>
+			<div class="info-block">
+			<div class="icon-col"><i class="fas fa-map-marker-alt"></i></div>
+			<div class="text-col">
+				<div class="label">Location</div>
+				<div class="value">Taiwan → USA</div>
+			</div>
+			</div>
+
+			<div class="info-block">
+			<div class="icon-col"><i class="fas fa-envelope"></i></div>
+			<div class="text-col">
+				<div class="label">Email</div>
+				<div class="value">kchen67@buffalo.edu</div>
+			</div>
+			</div>
 		</div>
 
-		<div class="info-block">
-		<div class="icon-col"><i class="fas fa-envelope"></i></div>
-		<div class="text-col">
-			<div class="label">Email</div>
-			<div class="value">kchen67@buffalo.edu</div>
+		<!-- Container 2: Send Message Form -->
+		<div class="container contact-form">
+			<div class="form-box">
+			<h2>Send Message</h2>
+			<form name = "submit-to-google-sheet">
+				<input type="text" placeholder="Your Name" required>
+				<input type="email" placeholder="Your Email" required>
+				<textarea placeholder="Your Message Here" rows="5" required></textarea>
+				<button type="submit">Send</button>
+			</form>
+			</div>
 		</div>
-		</div>
-	</div>
+		<div id="status"></div>
+	</main>
 
-	<!-- Container 2: Send Message Form -->
-	<div class="container contact-form">
-		<div class="form-box">
-		<h2>Send Message</h2>
-		<form name = "submit-to-google-sheet">
-			<input type="text" placeholder="Your Name" required>
-			<input type="email" placeholder="Your Email" required>
-			<textarea placeholder="Your Message Here" rows="5" required></textarea>
-			<button type="submit">Send</button>
-		</form>
-		</div>
-	</div>
-	<div id="status"></div>
+	<footer class="site-footer">
+		&copy; Kuan-Ting Chen 2025
+	</footer>
 
 	<script>
 	const status = document.getElementById("status");
@@ -98,10 +104,6 @@
 		});
 	});
 	</script>
-
-	<footer class="site-footer">
-		&copy; Kuan-Ting Chen 2025
-	</footer>
 
 </body>
 </html>
