@@ -75,14 +75,14 @@
 }
 
 .icon-link i {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 1;
   vertical-align: top;
   display: inline-block;
 }
 
 .icon-link .ai {
-  font-size: 1.4rem;  /* Slightly larger for Academicons to match */
+  font-size: 1.5rem;  /* Slightly larger for Academicons to match */
 }
 
 /* end nav bar setup*/
