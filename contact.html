@@ -70,12 +70,16 @@
 		<div class="container contact-form">
 			<div class="form-box">
 			<h2>Send Message</h2>
-			<form name = "submit-to-google-sheet">
-				<input type="text" placeholder="Your Name" required>
-				<input type="email" placeholder="Your Email" required>
-				<textarea placeholder="Your Message Here" rows="5" required></textarea>
-				<button type="submit">Send</button>
+			<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+			<p class="hidden">
+				<label>Don’t fill this out if you're human: <input name="bot-field"></label>
+			</p>
+			<input type="text" name="name" placeholder="Your Name" required>
+			<input type="email" name="email" placeholder="Your Email" required>
+			<textarea name="message" placeholder="Your Message Here" rows="5" required></textarea>
+			<button type="submit">Send</button>
 			</form>
+
 			</div>
 		</div>
 		<div id="status"></div>
@@ -84,26 +88,6 @@
 	<footer class="site-footer">
 		&copy; Kuan-Ting Chen 2025
 	</footer>
-
-	<script>
-	const status = document.getElementById("status");
-	const scriptURL = 'https://script.google.com/macros/s/AKfycbys33EpsVt5uEwng_en3DHmIyHoStP7e1tdogzyll0e_7xUN0Q/exec';
-	const form = document.forms['submit-to-google-sheet'];
-
-	form.addEventListener('submit', e => {
-		e.preventDefault();
-		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-		.then(response => {
-			form.reset();
-			status.innerHTML = 'Thanks!';
-			status.classList.add('thankyou_message');
-		})
-		.catch(error => {
-			status.innerHTML = 'Oops! Something went wrong.';
-			console.error('Error!', error.message);
-		});
-	});
-	</script>
 
 </body>
 </html>
