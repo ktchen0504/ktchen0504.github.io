@@ -121,7 +121,3 @@ form button {
 form button:hover {
   background-color: rgb(255, 209, 109);
 }
-
-.hidden {
-  display: none;
-}
